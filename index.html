@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    
+    <title> NASLA | Home </title>
+</head>
+<body class="">
+    <div class="bg-white mt-8 font-primary text-white">
+
+        <div class="container flex justify-between items-center">
+            <div class="">
+                <img src="assets/imgs/Logo.svg" alt="LOGO">
+            </div>
+            <div>
+                <div class="flex justify-center items-center">
+                    <h1 class="font-medium text-gray-700">Menu</h1>
+                    <img id="open-nav" onclick="openNav()" src="assets/imgs/menu.svg" class="cursor-pointer">
+                </div>
+                <div id="sidebar" class="fixed top-0 right-0 w-full h-screen p-10 bg-primary text-white z-[999] backdrop-blur-md shadow-lg transform translate-y-full transition-transform duration-500">
+                    <div class="container flex justify-between items-start mt-16">
+                        <div class="font-primary">
+                            <div>
+                                <img src="assets/imgs/logo-nav.svg" alt="LOGO">
+                            </div>
+                            <div class="mt-14">
+                                <h2 class="text-base font-normal text-gray-100"> Explore — </h2>
+                                <h2 class="text-2xl font-medium text-white mt-3"> Dribble </h2>
+                                <img class="absolute left-0 h-screen mb-2 -z-10" src="assets/imgs/logo-bg.svg" alt="">
+                                <h2 class="text-2xl font-medium text-white mt-3"> Instagram </h2>
+                                <h2 class="text-2xl font-medium text-white mt-3"> Facebook </h2>
+                                <h2 class="text-2xl font-medium text-white mt-3"> X </h2>
+                            </div>
+                            <div class="mt-14">
+                                <h2 class="text-base font-normal text-gray-100"> Office — </h2>
+                                <h2 class="mt-3 text-2xl font-medium text-white"> Saudi Arabia </h2>
+                                <h2 class="mt-3 text-sm w-56"> R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa </h2>
+                            </div>
+                        </div>
+                        <div>
+                            <nav class="font-secondary text-right z-10">
+                                <img id="close-nav" onclick="closeNav()" src="assets/imgs/Close.svg" class="cursor-pointer ml-auto w-5 h-5">
+                                <ul class="" id="nav">
+                                    <li class="mt-12">
+                                        <a class="font-bold text-4xl" href="#">Home</a>
+                                    </li>
+                                    <li class="mt-12">
+                                        <a class="font-bold text-4xl" href="#">About</a>
+                                    </li>
+                                    <li class="mt-12">
+                                        <a class="font-bold text-4xl" href="#">Services</a>
+                                    </li>
+                                    <li class="mt-12">
+                                        <a class="font-bold text-4xl" href="#">Works</a>
+                                    </li>
+                                    <li class="mt-12">
+                                        <a class="font-bold text-4xl" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-36 flex justify-center items-start">
+            <div class="absolute xs:-mt-12 sm:-mt-4 2xl:ml-28 2xl:mr-40 xl:ml-20 xl:mr-52 2lg:ml-16 2lg:mr-44 lg:ml-12 lg:mr-40 3md:ml-10 3md:mr-40 2md:ml-8 2md:mr-40 md:ml-6 md:mr-40 sm:ml-8 sm:mr-32 xs:ml-4 xs:mr-20 m-w-[1260px]">
+                <h2 class="mb-3 md:text-3xl sm:2xl: text-gray-500">Tourism Development Agency.</h2>
+                <h1 class="leading-none 2xl:text-[56px] 2xl:leading-tight xl:text-[50px] 2lg:text-[44px] lg:text-[40px] 3md:text-[36px] 2md:text-[32px] md:text-[28px] sm:text-[24px] xs:text-[20px] text-gray-700 font-semibold">Dedicated to Transforming Tourism Through Innovation and Sustainability</h1>
+            </div>
+            <div>
+                <img class="" src="assets/imgs/istockphoto-transformed.svg" alt="istockphoto-transformed">
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center text-tertiary leading-none 2xl:text-[56px] 2xl:leading-tight xl:text-[50px] 2lg:text-[44px] lg:text-[40px] 3md:text-[36px] 2md:text-[32px] md:text-[28px] sm:text-[24px] xs:text-[20px] font-semibold max-w-[1175px] m-auto mt-28 mb-36">
+                Your Partner in Pioneering Sustainable Tourism Development and Innovative Experiences
+            </h1>
+        </div>
+
+        <div class="flex justify-center items-start m-auto ml-16 mb-40">
+            <div class="2xl:mr-36">
+                <h2 class="sm:text-2xl text-xl font-medium text-gray-500 mb-10">At your service</h2>
+                <h2 class="text-gray-700 sm:text-5xl text-3xl w-auto">We deliver</h2>
+                <h2 class="text-gray-700 sm:text-5xl text-3xl md:ml-24 ml-10 mt-5 mb-5">A unique & </h2>
+                <h2 class="text-gray-700 sm:text-5xl text-3xl">Excellence</h2>
+                <p class="text-gray-400 sm:text-xl text-lg font-medium mt-10 max-w-[717px]">Guiding Your Journey Through Tourism Innovation, Brand Elevation, Cutting-Edge Technology, and Comprehensive Development Solutions.</p>
+            </div>
+            <div class="overflow-hidden flex justify-center items-center md:mt-0 mt-36">
+                <img class="2lg:ml-0 ml-24" src="assets/imgs/shape.svg" alt="logo">
+            </div>
+        </div>
+
+        <div class="container mb-28">
+            <div class="flex justify-between">
+                <div class="2xl:ml-[100px] mb-10">
+                    <h1 class="text-5xl font-semibold text-gray-600 mb-6">Our Services</h1>
+                    <h1 class="text-xl font-normal text-gray-400">Innovative Solutions for Exceptional Tourism Experiences</h1>
+                </div>
+                <div>
+                    <a class="flex items-center text-2xl font-semibold text-gray-700 hover:bg-gray-100 p-2 rounded-full transition-all duration-1000 ease-in-out group" href="#">                  
+                        <p class=" z-10 ">Services</p>
+                        <img class="bg-gray-100 rounded-full p-6 -ml-5 group-hover:ml-2 transition-all duration-1000 ease-in-out" src="assets/imgs/right.svg" alt="right">
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative">
+                    <img id="ph-1" class="rounded-[30px] hidden 2xl:block transition-opacity duration-500 ease-in-out" src="assets/imgs/ph-1.svg" alt="ph-1">
+                    <img id="ph-2" class="rounded-[30px] hidden 2xl:block 2xl:absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out" src="assets/imgs/ph-2.svg" alt="ph-2">
+                    <img id="ph-3" class="rounded-[30px] hidden 2xl:block 2xl:absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out" src="assets/imgs/ph-3.svg" alt="ph-3">
+                </div>
+            
+                <div class="ml-12 2xl:ml-28">
+                    <div id="div-1" class="p-8 bg-primary  text-white rounded-3xl mb-6  transition-colors duration-700 ease-in-out group" onmouseover="showImage('ph-1')" onmouseout="resetImage()">
+                        <h2 id="h-1" class="text-2xl text-white font-semibold mb-4 ">Tourism Development and Consultation</h2>
+                        <p id="p-1" class="max-w-[535px] text-sm text-white font-normal leading-relaxed ">
+                            NASLA specializes in sustainable tourism development, creating innovative destinations that meet the needs of modern travelers. Our services cover the full development lifecycle—from Master Planning and Infrastructure Development to Environmental Impact Assessments, Community Engagement, and Feasibility Studies—providing strategic consulting and operational support for successful project implementation.
+                        </p>
+                    </div>
+            
+                    <div id="div-2" class="p-8 hover:bg-primary rounded-3xl mb-6 bg-senary transition-colors duration-700 ease-in-out group w-full" onmouseover="showImage('ph-2')" onmouseout="resetImage()">
+                        <h2 class="text-2xl text-gray-700 font-semibold mb-4 group-hover:text-white">Experience Development</h2>
+                        <p class="max-w-[535px] text-sm text-gray-500 font-normal leading-relaxed group-hover:text-white">
+                            NASLA designs immersive tourism experiences tailored to diverse traveler segments, from cultural encounters and adventure activities to interactive exhibits and events. Our consulting services encompass strategic planning, design, and implementation, ensuring experiences are innovative, culturally relevant, and commercially viable.
+                        </p>
+                    </div>
+            
+                    <div id="div-3" class="p-8 hover:bg-primary rounded-3xl mb-6 bg-senary transition-colors duration-700 ease-in-out group" onmouseover="showImage('ph-3')" onmouseout="resetImage()">
+                        <h2 class="text-2xl text-gray-700 font-semibold mb-4 group-hover:text-white">Technology Solutions</h2>
+                        <p class="max-w-[535px] text-sm text-gray-500 font-normal leading-relaxed group-hover:text-white">
+                            NASLA enhances tourism through technology, offering Virtual and Augmented Reality, Digital Tour Guides, Smart Infrastructure, Data Analytics, and Sustainable Solutions. Our consulting services help integrate these innovations to boost visitor engagement and operational efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-primary pt-20 pb-20 text-white overflow-hidden">
+            <div class="flex justify-around items-start mb-5 container">
+                <div>
+                    <h1 class="text-5xl font-semibold mb-5">Our Work</h1>
+                    <p class="text-xl font-normal">A Showcase of Our Achievements and Transformative Projects</p>
+                </div>
+                <div>
+                    <h2 class="text-end p-3 text-2xl font-semibold text-white">“Qashla 613”the village</h2>
+                    <h2 class="text-end p-3 text-2xl font-medium text-gray-400">Alnakheel Resort</h2>
+                    <h2 class="text-end p-3 text-2xl font-medium text-gray-400">Al-khaleej Outdoor Mall</h2>
+                    <h2 class="text-end p-3 text-2xl font-medium text-gray-400">Sports Stadium Park</h2>
+                    <h2 class="text-end p-3 text-2xl font-medium text-gray-400">4 Hills Project</h2>
+                </div>
+            </div>
+            <img class="absolute h-full" src="assets/imgs/logo-bg.svg" alt="">
+            <div class="">
+                <div class="relative flex justify-end -mr-[305px]">
+                    <img id="image-1" class="rounded-2xl mr-6 transition-all duration-500 ease-in-out" src="assets/imgs/img-1.svg" alt="">
+                    <img id="image-2" class="rounded-2xl mr-6 transition-all duration-500 ease-in-out" src="assets/imgs/img-2.png" alt="">
+                </div>
+                <div class="flex justify-start items-start flex-col pl-[150px]">
+                    <h1 class="text-3xl font-semibold max-w-[245px] -mt-20 mb-12">“Qashla 613”the village</h1>
+                    <div class="flex">
+                        <button onclick="moveLeft()" class="p-2 z-50"><img class="p-3 bg-septenary rounded-full" src="assets/imgs/left-arrow.svg" alt="left"></button>
+                        <button onclick="moveRight()" class="p-2 z-50"><img class="p-3 bg-septenary rounded-full" src="assets/imgs/right-arrow.svg" alt="right"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-28 mt-28 ml-[100px]">
+            <div class="mb-12">
+                <h2 class="mb-5 text-5xl text-gray-700 font-semibold">Our Team</h2>
+                <p class="text-xl text-gray-400 font-normal">The Minds Powering Our Vision</p>
+            </div>
+            <div>
+                <div class="overflow-auto">
+                    <div class="flex flex-row w-[200%]">
+                        <div class="mr-28 w-full">
+                            <div class="relative group">
+                                <img src="assets/imgs/ali.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-[165px] transition-all duration-500 ease-in-out">
+                                    Founder of NooneenDesign Co, Co-founder of Advance Group. Holds PMP, FAA CPL, and risk management by UCI.
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">Ali Alsailleek</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">CEO</p>
+                        </div>
+                        <div class="mr-28 w-full">
+                            <div class="relative group">
+                                <img src="assets/imgs/balh.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-[165px] transition-all duration-500 ease-in-out">
+                                    VP & Board Member at SBH Group holds master's in finance
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">Mohammed Balhamer</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">MD</p>
+                        </div>
+                        <div class="mr-28 w-full">
+                            <div class="relative group">
+                                <img src="assets/imgs/ghazal.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-[165px] transition-all duration-500 ease-in-out">
+                                    VP of Alghazal travel & tourism agency, 3 years at McKinsey & Company, holds finance degree from Sussex University.
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">Abdullah Alghazal</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">CFO</p>
+                        </div>
+                        <div class="mr-28 w-full">
+                            <div class="relative group">
+                                <img src="assets/imgs/pedit.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-[165px] transition-all duration-500 ease-in-out">
+                                    PhD in Economics, a Bachelor's degree in Tourism & Hospitality, and a Master's degree in Marketing.
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">Torsten Pedit</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">Advisor</p>
+                        </div>
+                        <div class="mr-28 w-full">
+                            <div class="relative group">
+                                <img src="assets/imgs/james.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-[165px] transition-all duration-500 ease-in-out">
+                                    Director Compassionate Sustainability at Stanford University Founder of ReGen Villages Holding - Faculty, SU
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">James Ehrlich</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">Advisor</p>
+                        </div>
+                        <div class="w-full mr-[100px]">
+                            <div class="relative group">
+                                <img src="assets/imgs/paris.png" alt="" class="w-full">
+                                <p class="absolute opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 translate-x-5 m-3 p-5 bg-primary rounded-3xl w-[94%] text-xl text-white font-normal -mt-56 transition-all duration-500 ease-in-out">
+                                    Professor of Entrepreneurship and Managing Director of the Venture Lab at IE Business School and board member at Nesma & Partners Contracting Co
+                                </p>
+                            </div>
+                            <h2 class="text-3xl text-gray-700 font-semibold mb-6 mt-6">Dr. Paris de Le'traz</h2>
+                            <p class="text-2xl text-gray-400 font-medium ">Advisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="bg-primary rounded-3xl pt-10 pb-10">
+                <div class="container flex justify-between mb-36">
+                    <div>
+                        <p class="text-2xl">Ready to get started?</p>
+                        <h2 class="text-7xl font-medium">Let’s Talk</h2>
+                    </div>
+                    <div>
+                        <a href=""><img class="p-4 bg-septenary rounded-full w-20 h-20" src="assets/imgs/right-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+    
+                <marquee direction="right">
+                    <img src="assets/imgs/frame.svg" alt="">
+                </marquee>
+            </div>
+        </div>
+
+        <div class="pt-20 pb-20 container">
+            <div class="flex xs:flex-col lg:flex-row justify-between">
+                <div>
+                    <img src="assets/imgs/Logo.svg" alt="">
+                </div>
+                <div>
+                    <h2 class="text-xl text-gray-700 font-semibold mb-4">Contact Us</h2>
+                    <p class="text-sm mb-3 text-gray-400 ">+966 - 258745</p>
+                    <p class="text-sm mb-3 text-gray-400 ">Info@Nasla.com</p>
+                    <p class="text-sm mb-3 text-gray-400 w-[370px]">R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa</p>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="font-semibold text-xl text-gray-700 mb-5">Follow us on Social Media</h2>
+                    </div>
+                    <div class="flex flex-row">
+                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/X.svg" alt="">
+                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/instgram.svg" alt="">
+                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/web.svg" alt="">
+                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/mail.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-center text-xs text-gray-400 font-medium mt-10">© Copyright 2020-2024. All Rights Reserved. Kadi Beauty, an app from Kadi Salon.</h2>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
