@@ -22,22 +22,22 @@ let image1 = document.getElementById('image-1');
 let image2 = document.getElementById('image-2');
 
 function openNav() {
-
-  sideBar.classList.remove('translate-y-full');
+  
+  sideBar.classList.remove('-translate-y-full');
   
   sideBar.classList.add('translate-y-0');
   
   openNavIcon.classList.add('hidden');
-
+  
   closeNavIcon.classList.remove('hidden');
 
 }
 function closeNav() {
-
-  sideBar.classList.add('translate-y-full');    
-
+    
+  sideBar.classList.add('-translate-y-full');
+    
   sideBar.classList.remove('translate-y-0');
-  
+    
   openNavIcon.classList.remove('hidden');
   
   closeNavIcon.classList.add('hidden');
