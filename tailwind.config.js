@@ -14,6 +14,9 @@ module.exports = {
         'quaternary': "#6B7280",
         'senary': "#F3F4F6",
         'septenary': "#C08D54",
+        'octonary': "#1B1C1E",
+        'nonary': "#004532",
+        'decenary': "#909396",
       },
       fontFamily: {
         'primary':["Poppins"],
