@@ -892,6 +892,10 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .max-w-\[1136px\] {
   max-width: 1136px;
 }
@@ -918,6 +922,14 @@ video {
 
 .max-w-\[760px\] {
   max-width: 760px;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .-translate-x-\[100\%\] {
@@ -1462,6 +1474,16 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .xs\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1511,6 +1533,11 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1585,6 +1612,11 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 850px) {
@@ -1606,6 +1638,11 @@ video {
 
   .\32md\:text-\[32px\] {
     font-size: 32px;
+  }
+
+  .\32md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .\32md\:tracking-widest {
