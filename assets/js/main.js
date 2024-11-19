@@ -37,10 +37,10 @@ let content3 = document.getElementById('content-3');
 
 function openNav() {
   
-  sideBar.classList.remove('-translate-y-full');
+  sideBar.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
   
-  sideBar.classList.add('translate-y-0');
-  
+  sideBar.classList.add('translate-y-0', 'opacity-100');
+
   openNavIcon.classList.add('hidden');
   
   closeNavIcon.classList.remove('hidden');
@@ -48,10 +48,10 @@ function openNav() {
 }
 function closeNav() {
     
-  sideBar.classList.add('-translate-y-full');
+  sideBar.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
     
-  sideBar.classList.remove('translate-y-0');
-    
+  sideBar.classList.remove('translate-y-0','opacity-100');
+
   openNavIcon.classList.remove('hidden');
   
   closeNavIcon.classList.add('hidden');

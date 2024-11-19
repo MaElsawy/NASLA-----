@@ -18,7 +18,8 @@
 <body class="font-primary">
     <div class="bg-white mt-8 font-primary text-white">
 
-        <div class="container flex justify-between items-center">
+
+        <div class="container w-full flex justify-between items-center">
             <div class="">
                 <img src="assets/imgs/Logo.svg" alt="LOGO">
             </div>
@@ -27,7 +28,7 @@
                     <h1 class="font-medium text-gray-700">Menu</h1>
                     <img id="open-nav" onclick="openNav()" src="assets/imgs/menu.svg" class="cursor-pointer">
                 </div>
-                <div id="sidebar" class="fixed z-10 top-0 right-0 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500">
+                <div id="sidebar" class="fixed top-0 right-0 z-10 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500 opacity-0 pointer-events-none">
                     <div class="container flex justify-between items-start mt-16">
                         <div class="font-primary">
                             <div>

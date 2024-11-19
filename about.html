@@ -30,7 +30,7 @@
                     <h1 class="font-medium text-gray-700">Menu</h1>
                     <img id="open-nav" onclick="openNav()" src="assets/imgs/menu.svg" class="cursor-pointer">
                 </div>
-                <div id="sidebar" class="fixed z-10 top-0 right-0 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500">
+                <div id="sidebar" class="fixed top-0 right-0 z-10 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500 opacity-0 pointer-events-none">
                     <div class="container flex justify-between items-start mt-16">
                         <div class="font-primary">
                             <div>
@@ -76,29 +76,27 @@
             </div>
         </div>
 
-
-
-
         <div class="container mt-20">
             <div class="max-w-[1136px] mb-14">
-                <h2 class="text-primary font-normal text-5xl leading-normal">
+                <h2 class="text-primary font-normal xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-normal mb-3">
                     Our Story
                 </h2>
-                <p class="text-gray-700 font-normal text-6xl leading-normal">
+                <p class="text-gray-700 font-normal xs:text-base sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-normal">
                     Dedicated to Transforming Tourism Through Innovation and Sustainability
                 </p>
             </div>
-            <div class=" relative m-auto flex">
+            <div class="relative m-auto flex md:justify-start sm:justify-center">
                 <div class="">
-                    <img src="assets/imgs/about-ph-1.svg" alt="">
+                    <img class="w-full xs:hidden md:block" src="assets/imgs/about-ph-1.svg" alt="">
+                    <img class="xs:block md:hidden " src="assets/imgs/istockphoto-2068149381-2048x2048-transformed.svg" alt="">
                 </div>
-                <div class="absolute m-6 p-6 pb-40 rounded-2xl  bg-white w-[690px]">
-                    <p class="mb-4 text-gray-700 font-medium text-xl">Overview</p>
-                    <h2 class="mb-4 text-gray-700 font-medium text-6xl">About Nasla</h2>
-                    <p class="text-justify text-gray-500 font-normal text-base tracking-widest">
+                <div class="absolute xs:m-2 md:m-6 p-6 xl:pb-36 rounded-2xl w-auto bg-white xs:w-[310px] md:w-auto xl:w-[670px]">
+                    <p class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-sm xl:text-xl">Overview</p>
+                    <h2 class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-2xl md:text-4xl xl:text-6xl">About Nasla</h2>
+                    <p class="2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest">
                         Born from the historic heart of Al-Ahsa, NASLA was founded with the ambition to become a leader in Saudi Arabia's tourism development and experiential travel. Acquired by Salem Balhamer Holding Group and headquartered in Dammam, NASLA aligns perfectly with the group’s vision of diversifying investments and supporting Saudi Arabia’s Vision 2030. 
                     </p>
-                    <p class="mt-10 text-justify text-gray-500 font-normal text-base tracking-widest">
+                    <p class="xl:mt-10 2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest">
                         Innovation, sustainability, and cultural authenticity are at the core of NASLA. We don’t just create destinations – we craft experiences.
                     </p>
                 </div>
@@ -107,9 +105,7 @@
 
         </div>
 
-
-
-        <div class="container mt-20 mb-20 pt-10 pb-10 flex justify-between items-center border-b border-t border-gray-300">
+        <div class="container mt-20 mb-20 pt-10 pb-10 xs:hidden xl:flex justify-between items-center border-b border-t border-gray-300">
             <div class="max-w-[760px] relative">
                 <div id="content-1" class="">
                     <h2 class="font-semibold text-3xl text-octonary mb-8">Our Message</h2>
@@ -141,13 +137,34 @@
         </div>
 
 
-
-
-
-
-        
-
-<!-- stop here -->
+        <div class="container mt-20 mb-20 pt-10 pb-10 xs:flex xl:hidden justify-between items-center border-b border-t border-gray-300">
+            <div class="max-w-[760px] relative">
+                <div>
+                    <h4 class="font-semibold text-5xl text-tertiary mb-3">Message</h4>
+                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Message</h2>
+                    <p class="font-normal text-xl text-gray-500">Our mission is to transform the way people perceive and engage with travel and tourism. By leveraging cutting-edge technology, sustainable practices, and a deep understanding of local cultures, we aspire to craft immersive and unforgettable experiences that resonate with visitors on a profound level.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">Vision</h4>
+                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Vision</h2>
+                    <p class="font-normal text-xl text-gray-500">To be a leading force in shaping the future of tourism in Saudi Arabia and beyond, while we envision our projects seamlessly integrating with its natural and cultural surroundings.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">Values</h4>
+                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Values</h2>
+                    <p class="font-normal text-xl text-gray-500 mb-6">Core values are the set of ideals, principles, and beliefs that form the broad outlines that direct and control our behavior, guide decisions, and provide a reference for resolution and weighting when there is disagreement about a specific decision. Values stem from our Islamic and Arab beliefs and culture, our national identity, and the cumulative legacy practiced as behavior since its founding by the founder of the group and the Chairman of its Board of Directors, Sheikh Salem Balhamer, may God bless him and the team that started with him. We strive and work hard to ensure its sustainability across generations. Our core value system in the Salem Balhamer Group has come to include:</p>
+                    <div class="max-w-[680px] flex flex-wrap">
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Commitment</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Transparency</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Credibility</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Sustainability</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Innovation</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Respect</a>
+                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Professionalism</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="mb-20">
             <div class="text-center">
@@ -157,24 +174,20 @@
             </div>
 
             <div class="flex justify-around items-center">
-                <div>
+                <div class="xs:hidden xl::block mr-5">
                     <img class="rounded-3xl border-[10px] border-solid border-primary" src="assets/imgs/ali-2.svg" alt="CEO">
                 </div>
                 <div class="w-[700px] bg-senary rounded-3xl p-8">
                     <h1 class="mb-7 font-normal text-sm text-gray-400">
                         Our CEO Message
                     </h1>
-                    <p>“Driven by Vision 2030, NASLA aspires to contribute to transform Saudi Arabia into a world-class tourist destination. While The Kingdom's ambitious plan aims to attract 150 million visitors by 2030, a significant increase from the current 100 million.”</p>
-                    <p>We at NASLA are committed to developing tourism experiences that celebrate the rich cultural heritage and traditions of Saudi Arabia, while remaining sensitive to the diverse backgrounds of our guests. By fostering a deep understanding of both Arabic and international cultures, we strive to create a welcoming and enriching environment for all.</p>
-                    <p>Through continuous improvement in our people, processes, and technology, NASLA is dedicated to achieving excellence in the tourism sector. We actively seek partnerships with local and international organizations to share best practices and achieve our shared goals.</p>
-                    <h2>Ali Alsaileek</h2>
+                    <p class="mb-2 text-lg font-normal text-gray-500">“Driven by Vision 2030, NASLA aspires to contribute to transform Saudi Arabia into a world-class tourist destination. While The Kingdom's ambitious plan aims to attract 150 million visitors by 2030, a significant increase from the current 100 million.”</p>
+                    <p class="mb-2 text-lg font-normal text-gray-500">We at NASLA are committed to developing tourism experiences that celebrate the rich cultural heritage and traditions of Saudi Arabia, while remaining sensitive to the diverse backgrounds of our guests. By fostering a deep understanding of both Arabic and international cultures, we strive to create a welcoming and enriching environment for all.</p>
+                    <p class="mb-2 text-lg font-normal text-gray-500">Through continuous improvement in our people, processes, and technology, NASLA is dedicated to achieving excellence in the tourism sector. We actively seek partnerships with local and international organizations to share best practices and achieve our shared goals.</p>
+                    <h2 class="mt-10 font-npormal text-lg text-gray-700">Ali Alsaileek</h2>
                 </div>
             </div>
         </div>
-
-<!-- stop here -->
-
-
 
         <div class="container mb-3">
             <div class="bg-primary rounded-3xl pt-10 pb-10 text-white">
