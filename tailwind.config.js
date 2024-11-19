@@ -17,6 +17,8 @@ module.exports = {
         'octonary': "#1B1C1E",
         'nonary': "#004532",
         'decenary': "#909396",
+        'undecenary': "#101011",
+        'duodecenary': "#004532",
       },
       fontFamily: {
         'primary':["Poppins"],

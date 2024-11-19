@@ -167,3 +167,57 @@ function showThird(contentId) {
 
 
 
+
+
+
+
+
+let currentIndex = 0;
+
+function updateServices() {
+    
+  let services = [
+        
+    document.getElementById('services-div-1'),
+        
+    document.getElementById('services-div-2'),
+        
+    document.getElementById('services-div-3'),
+    
+  ];
+
+    
+  services.forEach((service, index) => {
+        
+    service.classList.add('scale-90');
+        
+    setTimeout(() => {
+            
+      service.style.order = (index + 3 - currentIndex) % 3;
+            
+      service.classList.remove('scale-90');
+        
+    }, 500);
+    
+  });
+}
+
+function nextImags() {
+    
+  currentIndex = (currentIndex + 1) % 3;
+    
+  updateServices();
+}
+
+function previosImags() {
+    
+  currentIndex = (currentIndex + 2);
+    
+  updateServices();
+}
+
+updateServices();
+
+
+
+
