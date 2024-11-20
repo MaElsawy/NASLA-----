@@ -19,6 +19,7 @@ module.exports = {
         'decenary': "#909396",
         'undecenary': "#101011",
         'duodecenary': "#004532",
+        'dodecenary': "#224269",
       },
       fontFamily: {
         'primary':["Poppins"],
