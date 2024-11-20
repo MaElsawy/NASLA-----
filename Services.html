@@ -94,28 +94,30 @@
         </div>
 
         <div class="flex 2xl:flex-row xs:flex-col 2xl:items-center justify-start mt-20 mb-28 text-white">
-            <div class="mr-32 text-start">
+            <div class="mr-32 text-start xs:flex xs:items-center xs:justify-between 2xl:block">
                 <h2 class=" xs:text-2xl sm:text-5xl md:text-6xl font-semibold text-undecenary mb-10">Service Categories</h2>
-                <div class="xs:hidden 2xl:flex">
+                <div class="flex xs:hidden 2xl:flex">
                     <img onclick="nextImags()" class="p-5 cursor-pointer bg-septenary rounded-full mr-3" src="assets/imgs/left-arrow.svg" alt="">
                     <img onclick="previosImags()" class="p-5 cursor-pointer bg-septenary rounded-full" src="assets/imgs/right-arrow.svg" alt="">
                 </div>
             </div>
-            <div class="flex 2xl:flex-row xs:flex-col xs:items-center 2xl:items-start overflow-hidden">
-                <div id="services-div-1" class="mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
-                    <img class="w-full" src="assets/imgs/service-1.svg" alt="">
-                    <h2 class="mt-3 mb-3 text-2xl font-semibold">Cultural aspects</h2>
-                    <p class="text-gray-200 w-[310px] text-base font-normal">Developing destinations that highlight cultural experiences, heritage sites, and local traditions.</p>
-                </div>
-                <div id="services-div-2" class="mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
-                    <img class="w-full" src="assets/imgs/service-2.svg" alt="">
-                    <h2 class="mt-3 mb-3 text-2xl font-semibold">Historical aspects</h2>
-                    <p class="text-gray-200 w-[310px] text-base font-normal">Creating and promoting destinations with significant historical value, including landmarks, museums, and historical tours.</p>
-                </div>
-                <div id="services-div-3" class="mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
-                    <img class="w-full" src="assets/imgs/service-3-3.svg" alt="">
-                    <h2 class="mt-3 mb-3 text-2xl font-semibold">Community aspects</h2>
-                    <p class="text-gray-200 w-[310px] text-base font-normal">Experts in community tourism, promoting cultural exchanges and supporting local communities sustainably.</p>
+            <div class="xs:overflow-auto 2xl:overflow-hidden">
+                <div class="flex flex-row flex-nowrap xs:items-center 2xl:items-start">
+                    <div id="services-div-1" class="services-div h-[570px] w-full mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
+                        <img class="w-full" src="assets/imgs/service-1.svg" alt="">
+                        <h2 class="mt-3 mb-3 text-2xl font-semibold">Cultural aspects</h2>
+                        <p class="text-gray-200 w-[310px] 2xl:max-w-[310px] text-base font-normal">Developing destinations that highlight cultural experiences, heritage sites, and local traditions.</p>
+                    </div>
+                    <div id="services-div-2" class="services-div h-[570px] w-full mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
+                        <img class="w-full" src="assets/imgs/service-2.svg" alt="">
+                        <h2 class="mt-3 mb-3 text-2xl font-semibold">Historical aspects</h2>
+                        <p class="text-gray-200 w-[310px] 2xl:max-w-[310px] text-base font-normal">Creating and promoting destinations with significant historical value, including landmarks, museums, and historical tours.</p>
+                    </div>
+                    <div id="services-div-3" class="services-div h-[570px] w-full mr-6 mb-5 p-5 bg-duodecenary rounded-xl transition-all duration-700 transform scale-100">
+                        <img class="w-full" src="assets/imgs/service-3-3.svg" alt="">
+                        <h2 class="mt-3 mb-3 text-2xl font-semibold">Community aspects</h2>
+                        <p class="text-gray-200 w-[310px] 2xl:max-w-[310px] text-base font-normal">Experts in community tourism, promoting cultural exchanges and supporting local communities sustainably.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +127,7 @@
                 <h2 class="mb-5 xs:text-2xl sm:text-4xl md:text-5xl text-primary font-bold">Experience Development</h2>
                 <p class="text-gray-400 text-base sm:text-justify">NASLA's Tourism Experience Development services focus on designing and implementing unique, immersive experiences tailored to different travelers' segments, enhancing their overall travel experience. This includes crafting cultural encounters, adventure activities, interactive exhibits, and event management, all ensuring a deeper connection and lasting memories for tourists. While we provide expert consulting services include strategic planning, design, and implementation of tourist experiences, ensuring its innovative, culturally relevant, and commercially viable.</p>
             </div>
-            <div class="flex mt-20 2lg:flex-row xs:flex-col 2lg:justify-start xs:justify-center items-center xs:text-center 2xl:text-start">
+            <div class="flex mt-20 2lg:flex-row xs:flex-col 2lg:justify-start xs:justify-center items-center xs:text-center 2lg:text-start">
                 <div class="2lg:mr-24">
                     <img src="assets/imgs/image-1.svg" alt="">
                 </div>
@@ -140,8 +142,8 @@
             <div class="bg-primary rounded-3xl pt-10 pb-10 text-white">
                 <div class="container flex justify-between mb-36">
                     <div>
-                        <p class="text-2xl">Ready to get started?</p>
-                        <h2 class="text-7xl font-medium">Let’s Talk</h2>
+                        <p class=" xs:text-xl sm:text-2xl">Ready to get started?</p>
+                        <h2 class="xs:text-5xl sm:text-7xl font-medium">Let’s Talk</h2>
                     </div>
                     <div>
                         <a href=""><img class="p-4 bg-septenary rounded-full w-20 h-20" src="assets/imgs/right-arrow.svg" alt=""></a>
@@ -149,7 +151,7 @@
                 </div>
     
                 <marquee direction="right">
-                    <img src="assets/imgs/frame.svg" alt="">
+                    <img class="container" src="assets/imgs/frame.svg" alt="">
                 </marquee>
             </div>
         </div>
