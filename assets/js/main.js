@@ -33,7 +33,15 @@ let content2 = document.getElementById('content-2');
 
 let content3 = document.getElementById('content-3');
 
-
+let services = [
+        
+  document.getElementById('services-div-1'),
+      
+  document.getElementById('services-div-2'),
+      
+  document.getElementById('services-div-3'),
+  
+];
 
 function openNav() {
   
@@ -46,6 +54,7 @@ function openNav() {
   closeNavIcon.classList.remove('hidden');
 
 }
+
 function closeNav() {
     
   sideBar.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
@@ -57,6 +66,7 @@ function closeNav() {
   closeNavIcon.classList.add('hidden');
 
 }
+
 function showImage(imageId) {
                                     
   ph1.classList.add("opacity-0");
@@ -67,16 +77,19 @@ function showImage(imageId) {
           
   document.getElementById(imageId).classList.remove("opacity-0");
 }
+
 function resetImage() {
 
   showImage("ph-1");
 
 }
+
 window.addEventListener("load", function() {
 
   showImage("ph-1");
 
 });
+
 function moveRight() {
 
   image1.classList.toggle('translate-x-[110%]');
@@ -84,6 +97,7 @@ function moveRight() {
   image2.classList.toggle('-translate-x-[100%]');
 
 }
+
 function moveLeft() {
 
   image1.classList.toggle('translate-x-[110%]');
@@ -91,6 +105,7 @@ function moveLeft() {
   image2.classList.toggle('-translate-x-[100%]');
 
 }
+
 function showFirst(contentId) {
 
   content1.classList.remove('hidden');
@@ -112,7 +127,9 @@ function showFirst(contentId) {
   btn3.classList.remove('text-white');
 
   document.getElementById(contentId).classList.remove('opacity-0');
+
 }
+
 
 function showSecond(contentId) {
 
@@ -135,6 +152,7 @@ function showSecond(contentId) {
   btn3.classList.remove('text-white');
 
   document.getElementById(contentId).classList.remove('opacity-0');
+
 }
 
 function showThird(contentId) {
@@ -158,35 +176,13 @@ function showThird(contentId) {
   btn2.classList.remove('text-white');
 
   document.getElementById(contentId).classList.remove('opacity-0');
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 let currentIndex = 0;
 
 function updateServices() {
-    
-  let services = [
-        
-    document.getElementById('services-div-1'),
-        
-    document.getElementById('services-div-2'),
-        
-    document.getElementById('services-div-3'),
-    
-  ];
 
-    
   services.forEach((service, index) => {
         
     service.classList.add('scale-90');
