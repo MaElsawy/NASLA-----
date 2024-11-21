@@ -80,7 +80,7 @@
                     Projects
                 </h2>
 
-                <p class="capitalize text-gray-700 font-normal xs:text-[16px] sm:text-[26px] md:text-[31px] 2md:text-[36px] lg:text-[41px] 2lg:text-5xl xl:text-5xl 2xl:text-6xl">
+                <p class="capitalize text-gray-700 font-normal xs:text-2xl sm:text-4xl md:text-5xl  lg:text-6xl">
                     A Tourism Partner Committed to Elevating Destinations to Ne
                 </p>
 
@@ -89,32 +89,34 @@
 
 
 
-        <div class="flex justify-between items-start mb-60">
-            <div>
+        <div class="flex lg:flex-row flex-col justify-center lg:justify-between items-start mb-60">
+            <div class="text-center m-auto lg:text-start lg:m-0">
                 <h1 class="mb-4 text-base text-gray-400">“Qashla 613”the village</h1>
                 <h1 class="mb-4 text-base font-semibold text-dodecenary">Alnakheel Resort</h1>
                 <h1 class="mb-4 text-base text-gray-400">Al-khaleej Outdoor Mall</h1>
                 <h1 class="mb-4 text-base text-gray-400">Sports Stadium Park</h1>
                 <h1 class="mb-4 text-base text-gray-400">4 Hills Project</h1>
             </div>
-            <div class="max-w-[800px]">
-                <div>
-                    <div>
-                        <img class="rounded-3xl" src="assets/imgs/801732116006.png" alt="">
-                        <img class="rounded-3xl hidden" src="assets/imgs/801732115819.png" alt="">
+            <div class="max-w-[800px] m-auto lg:m-0">
+
+                <div class="relative">
+                    <div class="relative z-0 overflow-hidden">
+                        <img id="Works-ph-1" class="rounded-3xl w-full h-auto [clip-path:polygon(0%_0%,_100%_0%,_100%_100%,_4%_92%)]" src="assets/imgs/801732116006.png" alt="">
+                        <img id="Works-ph-2" class="rounded-3xl hidden" src="assets/imgs/801732115819.png" alt="">
                     </div>
-                    <div class="flex justify-between items-center -mt-[105px] mb-20">
+                    <div class="absolute flex justify-between items-center -mt-[105px] mb-20 w-full">
                         <div class="flex">
-                            <img class="w-[124px] h-[104px] mr-2 rounded-2xl border-4 border-green-700" src="assets/imgs/801732116006.png">
-                            <img class="w-[124px] h-[104px] ml-2 rounded-2xl border-4" src="assets/imgs/801732115819.png">
+                            <img onclick="activeLeft()" id="Works-ph-mini-1" class="w-[124px] h-[104px] mr-2 rounded-2xl border-4 border-green-700" src="assets/imgs/801732116006.png">
+                            <img onclick="activeRight()" id="Works-ph-mini-2" class="w-[124px] h-[104px] ml-2 rounded-2xl border-4" src="assets/imgs/801732115819.png">
                         </div>
-                        <div class="flex mr-4">
-                            <img class="p-5 bg-septenary rounded-full mr-2 cursor-pointer"src="assets/imgs/left-arrow.svg" alt="">
-                            <img class="p-5 bg-septenary rounded-full ml-2 cursor-pointer"src="assets/imgs/right-arrow.svg" alt="">
+                        <div class="xs:hidden sm:flex mr-4 ">
+                            <img onclick="leftImage()" class="p-5 bg-septenary rounded-full mr-2 cursor-pointer" src="assets/imgs/left-arrow.svg" alt="">
+                            <img onclick="rightImage()" class="p-5 bg-septenary rounded-full ml-2 cursor-pointer" src="assets/imgs/right-arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div>
+
+                <div class="mt-20">
                     <h2 class="text-3xl text-duodecenary font-semibold mb-6">Alnakeel Resort</h2>
                     <p class="text-xl text-gray-400 mb-6">A boutique resort in the middle of the largest palm oasis in the world, we design it to provide a unique and luxurious experience for guests. The resort is designed to blend in with the natural surroundings and offer guests a peaceful and relaxing environment. The resort features private villas that are surrounded by lush greenery and palm trees. The villas are designed with modern amenities such as private pools, outdoor showers, and spacious living areas. The resort also features a spa that offers guests a range of treatments to help them relax and rejuvenate. Additionally, the resort can offer guests a range of activities such as hiking, harvesting dates, and many more to explore the surrounding oasis.</p>
                     <div class="flex">

@@ -215,5 +215,59 @@ function previosImags() {
 updateServices();
 
 
+let worksph1 = document.getElementById('works-ph-1');
+
+let worksph2 = document.getElementById('works-ph-2');
+
+let Worksphmini1 = document.getElementById('Works-ph-mini-1');
+
+let Worksphmini2 = document.getElementById('Works-ph-mini-2');
 
 
+function activeLeft() {
+
+  Worksphmini1.classList.add('border-4', 'border-green-700');
+
+  Worksphmini2.classList.remove('border-4', 'border-green-700');
+
+  worksph1.classList.remove('hidden');
+
+  worksph2.classList.add('hidden');
+
+}
+
+function activeRight() {
+
+  Worksphmini1.classList.remove('border-4', 'border-green-700');
+
+  Worksphmini2.classList.add('border-4', 'border-green-700');
+
+  worksph1.classList.add('hidden');
+
+  worksph2.classList.remove('hidden');
+
+}
+
+function leftImage() {
+
+  Worksphmini1.classList.add('border-4', 'border-green-700');
+
+  Worksphmini2.classList.remove('border-4', 'border-green-700');
+
+  worksph1.classList.remove('hidden');
+
+  worksph2.classList.add('hidden');
+
+}
+
+function rightImage() {
+
+  Worksphmini1.classList.remove('border-4', 'border-green-700');
+
+  Worksphmini2.classList.add('border-4', 'border-green-700');
+
+  worksph1.classList.add('hidden');
+
+  worksph2.classList.remove('hidden');
+
+}
