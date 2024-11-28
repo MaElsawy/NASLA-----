@@ -215,6 +215,12 @@ function previosImags() {
 updateServices();
 
 
+
+
+
+
+
+
 let worksph1 = document.getElementById('works-ph-1');
 
 let worksph2 = document.getElementById('works-ph-2');
@@ -224,50 +230,55 @@ let Worksphmini1 = document.getElementById('Works-ph-mini-1');
 let Worksphmini2 = document.getElementById('Works-ph-mini-2');
 
 
+
 function activeLeft() {
 
-  Worksphmini1.classList.add('border-4', 'border-green-700');
+  worksph1.classList.remove('opacity-0');
 
-  Worksphmini2.classList.remove('border-4', 'border-green-700');
+  worksph1.classList.add('opacity-100');
 
-  worksph1.classList.remove('hidden');
+  worksph2.classList.add('opacity-0');
 
-  worksph2.classList.add('hidden');
+  worksph2.classList.remove('opacity-100');
 
+  worksph1.classList.remove('absolute');
+
+  worksph1.classList.add('relative');
+
+  worksph2.classList.add('absolute');
+
+  worksph2.classList.remove('relative');
+
+  Worksphmini1.classList.add('border-green-700');
+
+  Worksphmini2.classList.remove('border-green-700');
 }
 
 function activeRight() {
 
-  Worksphmini1.classList.remove('border-4', 'border-green-700');
+  worksph1.classList.add('opacity-0');
 
-  Worksphmini2.classList.add('border-4', 'border-green-700');
+  worksph1.classList.remove('opacity-100');
 
-  worksph1.classList.add('hidden');
+  worksph2.classList.remove('opacity-0');
 
-  worksph2.classList.remove('hidden');
+  worksph2.classList.add('opacity-100');
 
-}
+  worksph1.classList.add('absolute');
 
-function leftImage() {
+  worksph1.classList.remove('relative');
 
-  Worksphmini1.classList.add('border-4', 'border-green-700');
+  worksph2.classList.remove('absolute');
 
-  Worksphmini2.classList.remove('border-4', 'border-green-700');
+  worksph2.classList.add('relative');
 
-  worksph1.classList.remove('hidden');
+  Worksphmini1.classList.remove('border-green-700');
 
-  worksph2.classList.add('hidden');
-
-}
-
-function rightImage() {
-
-  Worksphmini1.classList.remove('border-4', 'border-green-700');
-
-  Worksphmini2.classList.add('border-4', 'border-green-700');
-
-  worksph1.classList.add('hidden');
-
-  worksph2.classList.remove('hidden');
+  Worksphmini2.classList.add('border-green-700');
 
 }
+
+
+
+
+

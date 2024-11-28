@@ -644,12 +644,12 @@ video {
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .-z-10 {
   z-index: -10;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -658,22 +658,6 @@ video {
 
 .z-50 {
   z-index: 50;
-}
-
-.z-auto {
-  z-index: auto;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
-.z-\[\] {
-  z-index: ;
-}
-
-.z-\[999px\] {
-  z-index: 999px;
 }
 
 .m-1 {
@@ -686,10 +670,6 @@ video {
 
 .m-auto {
   margin: auto;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .-ml-5 {
@@ -904,14 +884,6 @@ video {
   margin-top: 2rem;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
-.-mb-\[105px\] {
-  margin-bottom: -105px;
-}
-
 .flex {
   display: flex;
 }
@@ -940,16 +912,16 @@ video {
   height: 570px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .w-20 {
@@ -1064,10 +1036,6 @@ video {
   max-width: 940px;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .-translate-x-\[100\%\] {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1090,56 +1058,6 @@ video {
 
 .translate-y-0 {
   --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-x-1 {
-  --tw-skew-x: 1deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-x-2 {
-  --tw-skew-x: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-x-12 {
-  --tw-skew-x: 12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-skew-x-12 {
-  --tw-skew-x: -12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-12 {
-  --tw-skew-y: 12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-skew-y-12 {
-  --tw-skew-y: -12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-6 {
-  --tw-skew-y: 6deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-0 {
-  --tw-skew-y: 0deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-skew-y-0 {
-  --tw-skew-y: -0deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-\[\] {
-  --tw-skew-y: ;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1318,21 +1236,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1363,11 +1266,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-10 {
@@ -1460,11 +1358,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -1655,216 +1548,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.\[clip-path\:polygon\(0\%_0\%\2c _0\%_0\%\2c _100\%_100\%\2c _4\%_92\%\)\] {
-  clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 4% 92%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _0\%_0\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 0% 0%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _10\%_0\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 10% 0%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_0\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_10\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, % 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _10\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _15\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _2\%_92\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 2% 92%);
-}
-
 .\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _4\%_92\%\)\] {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 4% 92%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _6\%_92\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 6% 92%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _7\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _7\%_92\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 92%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _7\%_95\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7% 95%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _8\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _9\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 9% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_0\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_10\%\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_10\%\2c _100\%_100\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _100\%_10\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0%, 100% 10, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\%\2c _1000\%_0\%\2c _100\%_100\%\2c _4\%_92\%\)\] {
-  clip-path: polygon(0% 0%, 1000% 0%, 100% 100%, 4% 92%);
-}
-
-.\[clip-path\:polygon\(0\%_0\2c _0\%_0\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(0% 0, 0% 0, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(0\%_0\2c _100\%_0\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_0\2c _100\%_0\2c _90\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 0, 100% 0, 90% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_10\%\2c _100\%_0\%\2c _100\%_100\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(0\%_10\%\2c _100\%_0\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0\%_10\2c _100\%_0\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0% 10, 100% 0, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0_0\2c _0_0\2c _0_0\2c _0\%_100\%\)\] {
-  clip-path: polygon(0 0, 0 0, 0 0, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0_0\2c _0_0\2c _0_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0_0\2c _0_0\2c _90\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0 0, 0 0, 90% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0_0\2c _100\%_0\2c _90\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(0_0\2c __0\2c _90\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(0 0,  0, 90% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_0\%\2c _100\%_0\%\2c _100\%_100\%\2c _8\%_90\%\)\] {
-  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 8% 90%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _0\%_0\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 0, 0% 0, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _0\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 0% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _100\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _80\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 80% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _90\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 90% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _90\%_100\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _90\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _90\%_100\%\2c _10\%_0\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 10% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _90\%_100\%\2c _50\%_0\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 50% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_0\2c _100\%_0\2c _900\%_100\%\2c _0\%_100\%\)\] {
-  clip-path: polygon(10% 0, 100% 0, 900% 100%, 0% 100%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _0\%_0\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 10, 0% 0, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_0\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 10, 10% 0, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_10\2c _0\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 10, 10% 10, 0% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_10\2c _10\%_0\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 10, 10% 10, 10% 0%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_10\2c _10\%_10\%\2c _0\%_0\%\)\] {
-  clip-path: polygon(10% 10, 10% 10, 10% 10%, 0% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_10\2c _10\%_10\%\2c _10\%_0\%\)\] {
-  clip-path: polygon(10% 10, 10% 10, 10% 10%, 10% 0%);
-}
-
-.\[clip-path\:polygon\(10\%_10\2c _10\%_10\2c _10\%_10\%\2c _10\%_10\%\)\] {
-  clip-path: polygon(10% 10, 10% 10, 10% 10%, 10% 10%);
 }
 
 .hover\:bg-gray-100:hover {
@@ -2087,6 +1772,10 @@ video {
     font-size: 24px;
   }
 
+  .sm\:text-\[25px\] {
+    font-size: 25px;
+  }
+
   .sm\:text-\[26px\] {
     font-size: 26px;
   }
@@ -2220,14 +1909,6 @@ video {
     font-size: 36px;
   }
 
-  .\32md\:text-\[42px\] {
-    font-size: 42px;
-  }
-
-  .\32md\:text-\[45px\] {
-    font-size: 45px;
-  }
-
   .\32md\:tracking-widest {
     letter-spacing: 0.1em;
   }
@@ -2294,41 +1975,17 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:text-\[40px\] {
     font-size: 40px;
   }
 
   .lg\:text-\[41px\] {
     font-size: 41px;
-  }
-
-  .lg\:text-\[50px\] {
-    font-size: 50px;
-  }
-
-  .lg\:text-\[51px\] {
-    font-size: 51px;
-  }
-
-  .lg\:text-\[1px\] {
-    font-size: 1px;
-  }
-
-  .lg\:text-\[21px\] {
-    font-size: 21px;
-  }
-
-  .lg\:text-\[22px\] {
-    font-size: 22px;
-  }
-
-  .lg\:text-\[23px\] {
-    font-size: 23px;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 
@@ -2372,16 +2029,6 @@ video {
 
   .\32lg\:text-\[44px\] {
     font-size: 44px;
-  }
-
-  .\32lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .\32lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
 
@@ -2466,11 +2113,6 @@ video {
     line-height: 1.75rem;
   }
 
-  .xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .xl\:leading-\[80px\] {
     line-height: 80px;
   }
@@ -2536,11 +2178,6 @@ video {
 
   .\32xl\:text-\[56px\] {
     font-size: 56px;
-  }
-
-  .\32xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 
   .\32xl\:leading-tight {
