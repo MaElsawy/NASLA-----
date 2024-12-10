@@ -34,48 +34,49 @@ let content2 = document.getElementById('content-2');
 let content3 = document.getElementById('content-3');
 
 let services = [
-        
+
   document.getElementById('services-div-1'),
-      
+
   document.getElementById('services-div-2'),
-      
+
   document.getElementById('services-div-3'),
-  
+
 ];
 
 function openNav() {
-  
+
   sideBar.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
-  
+
   sideBar.classList.add('translate-y-0', 'opacity-100');
 
   openNavIcon.classList.add('hidden');
-  
+
   closeNavIcon.classList.remove('hidden');
 
 }
 
 function closeNav() {
-    
+
   sideBar.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
-    
+
   sideBar.classList.remove('translate-y-0','opacity-100');
 
   openNavIcon.classList.remove('hidden');
-  
+
   closeNavIcon.classList.add('hidden');
 
 }
 
 function showImage(imageId) {
-                                    
+
   ph1.classList.add("opacity-0");
-  
+
   ph2.classList.add("opacity-0");
-  
+
   ph3.classList.add("opacity-0");
-          
+
   document.getElementById(imageId).classList.remove("opacity-0");
+
 }
 
 function resetImage() {
