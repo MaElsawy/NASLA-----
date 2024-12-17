@@ -764,6 +764,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.me-5 {
+  margin-inline-end: 1.25rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -786,6 +790,10 @@ video {
 
 .ml-24 {
   margin-left: 6rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-6 {
@@ -884,10 +892,6 @@ video {
   margin-top: 2rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -980,6 +984,10 @@ video {
   width: 700px;
 }
 
+.w-\[730px\] {
+  width: 730px;
+}
+
 .w-\[94\%\] {
   width: 94%;
 }
@@ -990,30 +998,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-\[850px\] {
-  width: 850px;
-}
-
-.w-\[800px\] {
-  width: 800px;
-}
-
-.w-\[750px\] {
-  width: 750px;
-}
-
-.w-\[740px\] {
-  width: 740px;
-}
-
-.w-\[730px\] {
-  width: 730px;
 }
 
 .max-w-\[1136px\] {
@@ -1030,6 +1014,10 @@ video {
 
 .max-w-\[245px\] {
   max-width: 245px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .max-w-\[390px\] {
@@ -1074,22 +1062,6 @@ video {
 
 .max-w-\[940px\] {
   max-width: 940px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
-.max-w-8 {
-  max-width: 2rem;
-}
-
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .-translate-x-\[100\%\] {
@@ -1400,6 +1372,10 @@ video {
   line-height: 1;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1423,10 +1399,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .font-bold {
@@ -2133,10 +2105,6 @@ video {
     margin-top: -5rem;
   }
 
-  .xl\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .xl\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -2151,6 +2119,10 @@ video {
 
   .xl\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .xl\:block {
@@ -2179,6 +2151,10 @@ video {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
   }
 
   .xl\:pb-36 {
@@ -2217,6 +2193,10 @@ video {
 @media (min-width: 1536px) {
   .\32xl\:absolute {
     position: absolute;
+  }
+
+  .\32xl\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .\32xl\:ml-28 {
@@ -2261,6 +2241,10 @@ video {
 
   .\32xl\:items-center {
     align-items: center;
+  }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
   }
 
   .\32xl\:overflow-hidden {
