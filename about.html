@@ -1,242 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
-    
-    <title> NASLA | About </title>
-</head>
-<body class="font-primary">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NASLA | About</title>
+  </head>
+  <body class="font-primary">
     <div class="container mt-8">
+      <div class="w-full flex justify-between items-center">
+        <div class="">
+          <img src="assets/imgs/Logo.svg" alt="LOGO" />
+        </div>
+        <div>
+          <div class="flex justify-center items-center">
+            <h1 class="font-medium text-gray-700">Menu</h1>
+            <img
+              id="open-nav"
+              onclick="openNav()"
+              src="assets/imgs/menu.svg"
+              class="cursor-pointer"
+            />
+          </div>
+          <div
+            id="sidebar"
+            class="fixed top-0 right-0 z-10 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500 opacity-0 pointer-events-none"
+          >
+            <div class="flex justify-between items-start mt-16">
+              <div class="font-primary">
+                <div>
+                  <img src="assets/imgs/logo-nav.svg" alt="LOGO" />
+                </div>
+                <div class="mt-14">
+                  <h2 class="xs:text-sm sm:text-base font-normal text-gray-100">
+                    Explore —
+                  </h2>
+                  <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">
+                    Dribble
+                  </h2>
+                  <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">
+                    Instagram
+                  </h2>
+                  <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">
+                    Facebook
+                  </h2>
+                  <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">
+                    X
+                  </h2>
+                </div>
+                <div class="mt-14">
+                  <h2 class="text-sm sm:text-base font-normal text-gray-100">
+                    Office —
+                  </h2>
+                  <h2
+                    class="mt-3 xs:text-lg sm:text-2xl font-medium text-white"
+                  >
+                    Saudi Arabia
+                  </h2>
+                  <h2 class="mt-3 xs:text-xs sm:text-sm w-56">
+                    R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa
+                  </h2>
+                </div>
+              </div>
+              <div>
+                <nav class="font-secondary text-right">
+                  <img
+                    id="close-nav"
+                    onclick="closeNav()"
+                    src="assets/imgs/Close.svg"
+                    class="cursor-pointer ml-auto w-5 h-5"
+                  />
+                  <ul id="nav">
+                    <li class="mt-12">
+                      <a
+                        class="font-bold text-lg sm:text-4xl w-[50px]"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="mt-12">
+                      <a
+                        class="font-bold text-lg sm:text-4xl w-[50px]"
+                        href="about.html"
+                        >About</a
+                      >
+                    </li>
+                    <li class="mt-12">
+                      <a
+                        class="font-bold text-lg sm:text-4xl w-[50px]"
+                        href="Services.html"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="mt-12">
+                      <a
+                        class="font-bold text-lg sm:text-4xl w-[50px]"
+                        href="Works.html"
+                        >Works</a
+                      >
+                    </li>
+                    <li class="mt-12">
+                      <a
+                        class="font-bold text-lg sm:text-4xl"
+                        href="contact us.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="container mt-20">
+        <div class="max-w-[1136px] mb-14">
+          <h2
+            class="text-primary font-normal xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-normal mb-3"
+          >
+            Our Story
+          </h2>
+          <p
+            class="text-gray-700 font-normal xs:text-base sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-normal"
+          >
+            Dedicated to Transforming Tourism Through Innovation and
+            Sustainability
+          </p>
+        </div>
+        <div class="relative m-auto flex md:justify-start sm:justify-center">
+          <div class="">
+            <img
+              class="w-full xs:hidden md:block"
+              src="assets/imgs/about-ph-1.png"
+              alt=""
+            />
+            <img
+              class="xs:block md:hidden"
+              src="assets/imgs/about-ph-2.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute xs:m-2 md:m-6 p-6 xl:pb-36 rounded-2xl w-auto bg-white xs:w-[310px] md:w-auto xl:w-[670px]"
+          >
+            <p
+              class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-sm xl:text-xl"
+            >
+              Overview
+            </p>
+            <h2
+              class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-2xl md:text-4xl xl:text-6xl"
+            >
+              About Nasla
+            </h2>
+            <p
+              class="2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest"
+            >
+              Born from the historic heart of Al-Ahsa, NASLA was founded with
+              the ambition to become a leader in Saudi Arabia's tourism
+              development and experiential travel. Acquired by Salem Balhamer
+              Holding Group and headquartered in Dammam, NASLA aligns perfectly
+              with the group’s vision of diversifying investments and supporting
+              Saudi Arabia’s Vision 2030.
+            </p>
+            <p
+              class="xl:mt-10 2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest"
+            >
+              Innovation, sustainability, and cultural authenticity are at the
+              core of NASLA. We don’t just create destinations – we craft
+              experiences.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div
+        class="container mt-20 mb-20 pt-10 pb-10 xs:hidden xl:flex justify-between items-center border-b border-t border-gray-300"
+      >
+        <div class="max-w-[760px] relative">
+          <div id="content-1" class="">
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Message
+            </h2>
+            <p class="font-normal text-xl text-gray-500">
+              Our mission is to transform the way people perceive and engage
+              with travel and tourism. By leveraging cutting-edge technology,
+              sustainable practices, and a deep understanding of local cultures,
+              we aspire to craft immersive and unforgettable experiences that
+              resonate with visitors on a profound level.
+            </p>
+          </div>
+          <div id="content-2" class="hidden">
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Vision
+            </h2>
+            <p class="font-normal text-xl text-gray-500">
+              To be a leading force in shaping the future of tourism in Saudi
+              Arabia and beyond, while we envision our projects seamlessly
+              integrating with its natural and cultural surroundings.
+            </p>
+          </div>
+          <div id="content-3" class="hidden">
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Values
+            </h2>
+            <p class="font-normal text-xl text-gray-500 mb-6">
+              Core values are the set of ideals, principles, and beliefs that
+              form the broad outlines that direct and control our behavior,
+              guide decisions, and provide a reference for resolution and
+              weighting when there is disagreement about a specific decision.
+              Values stem from our Islamic and Arab beliefs and culture, our
+              national identity, and the cumulative legacy practiced as behavior
+              since its founding by the founder of the group and the Chairman of
+              its Board of Directors, Sheikh Salem Balhamer, may God bless him
+              and the team that started with him. We strive and work hard to
+              ensure its sustainability across generations. Our core value
+              system in the Salem Balhamer Group has come to include:
+            </p>
+            <div class="max-w-[680px] flex flex-wrap">
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Commitment</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Transparency</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Credibility</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Sustainability</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Innovation</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Respect</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Professionalism</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-96 border-l-2 border-gray-300">
+          <h4
+            id="btn-1"
+            class="font-semibold text-5xl p-8 pr-[370px] cursor-pointer bg-primary text-white"
+            onclick="showFirst('content-1')"
+          >
+            Message
+          </h4>
+          <h4
+            id="btn-2"
+            class="font-semibold text-5xl text-tertiary p-8 pr-[370px] cursor-pointer"
+            onclick="showSecond('content-2')"
+          >
+            Vision
+          </h4>
+          <h4
+            id="btn-3"
+            class="font-semibold text-5xl text-tertiary p-8 pr-[370px] cursor-pointer"
+            onclick="showThird('content-3')"
+          >
+            Values
+          </h4>
+        </div>
+      </div>
 
-        <div class="w-full flex justify-between items-center">
-            <div class="">
-                <img src="assets/imgs/Logo.svg" alt="LOGO">
+      <div
+        class="container mt-20 mb-20 pt-10 pb-10 xs:flex xl:hidden justify-between items-center border-b border-t border-gray-300"
+      >
+        <div class="max-w-[760px] relative">
+          <div>
+            <h4 class="font-semibold text-5xl text-tertiary mb-3">Message</h4>
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Message
+            </h2>
+            <p class="font-normal text-xl text-gray-500">
+              Our mission is to transform the way people perceive and engage
+              with travel and tourism. By leveraging cutting-edge technology,
+              sustainable practices, and a deep understanding of local cultures,
+              we aspire to craft immersive and unforgettable experiences that
+              resonate with visitors on a profound level.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">
+              Vision
+            </h4>
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Vision
+            </h2>
+            <p class="font-normal text-xl text-gray-500">
+              To be a leading force in shaping the future of tourism in Saudi
+              Arabia and beyond, while we envision our projects seamlessly
+              integrating with its natural and cultural surroundings.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">
+              Values
+            </h4>
+            <h2 class="font-semibold text-3xl text-octonary mb-8">
+              Our Values
+            </h2>
+            <p class="font-normal text-xl text-gray-500 mb-6">
+              Core values are the set of ideals, principles, and beliefs that
+              form the broad outlines that direct and control our behavior,
+              guide decisions, and provide a reference for resolution and
+              weighting when there is disagreement about a specific decision.
+              Values stem from our Islamic and Arab beliefs and culture, our
+              national identity, and the cumulative legacy practiced as behavior
+              since its founding by the founder of the group and the Chairman of
+              its Board of Directors, Sheikh Salem Balhamer, may God bless him
+              and the team that started with him. We strive and work hard to
+              ensure its sustainability across generations. Our core value
+              system in the Salem Balhamer Group has come to include:
+            </p>
+            <div class="max-w-[680px] flex flex-wrap">
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Commitment</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Transparency</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Credibility</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Sustainability</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Innovation</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Respect</a
+              >
+              <a
+                class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto"
+                href="#"
+                >Professionalism</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-20">
+        <div class="text-center">
+          <h1 class="font-normal text-sm text-decenary mb-6">CEO MESSAGE</h1>
+
+          <h1
+            class="font-normal xs:text-3xl sm:text-5xl 2md:text-6xl text-gray-700 mb-28 max-w-[800px] m-auto"
+          >
+            Guiding Our Journey: A Message from the CEO
+          </h1>
+        </div>
+
+        <div class="flex justify-around items-center">
+          <div class="xs:hidden xl:block mr-5">
+            <img
+              class="rounded-3xl border-[10px] border-solid border-primary"
+              src="assets/imgs/ali-22.png"
+              alt="CEO"
+            />
+          </div>
+          <div class="w-[700px] bg-senary rounded-3xl p-8">
+            <h1 class="mb-7 font-normal text-sm text-gray-400">
+              Our CEO Message
+            </h1>
+            <p class="mb-2 text-lg font-normal text-gray-500">
+              “Driven by Vision 2030, NASLA aspires to contribute to transform
+              Saudi Arabia into a world-class tourist destination. While The
+              Kingdom's ambitious plan aims to attract 150 million visitors by
+              2030, a significant increase from the current 100 million.”
+            </p>
+            <p class="mb-2 text-lg font-normal text-gray-500">
+              We at NASLA are committed to developing tourism experiences that
+              celebrate the rich cultural heritage and traditions of Saudi
+              Arabia, while remaining sensitive to the diverse backgrounds of
+              our guests. By fostering a deep understanding of both Arabic and
+              international cultures, we strive to create a welcoming and
+              enriching environment for all.
+            </p>
+            <p class="mb-2 text-lg font-normal text-gray-500">
+              Through continuous improvement in our people, processes, and
+              technology, NASLA is dedicated to achieving excellence in the
+              tourism sector. We actively seek partnerships with local and
+              international organizations to share best practices and achieve
+              our shared goals.
+            </p>
+            <h2 class="mt-10 font-npormal text-lg text-gray-700">
+              Ali Alsaileek
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-3">
+        <div class="bg-primary rounded-3xl pt-10 pb-10 text-white">
+          <div class="container flex justify-between mb-36">
+            <div>
+              <p class="xs:text-xl sm:text-2xl">Ready to get started?</p>
+              <h2 class="xs:text-5xl sm:text-7xl font-medium">Let’s Talk</h2>
             </div>
             <div>
-                <div class="flex justify-center items-center">
-                    <h1 class="font-medium text-gray-700">Menu</h1>
-                    <img id="open-nav" onclick="openNav()" src="assets/imgs/menu.svg" class="cursor-pointer">
-                </div>
-                <div id="sidebar" class="fixed top-0 right-0 z-10 w-full h-screen p-10 bg-primary text-white backdrop-blur-md shadow-lg transform -translate-y-full transition-transform duration-500 opacity-0 pointer-events-none">
-                    <div class="flex justify-between items-start mt-16">
-                        <div class="font-primary">
-                            <div>
-                                <img src="assets/imgs/logo-nav.svg" alt="LOGO">
-                            </div>
-                            <div class="mt-14 ">
-                                <h2 class="xs:text-sm sm:text-base font-normal text-gray-100">Explore —</h2>
-                                <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">Dribble</h2>
-                                <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">Instagram</h2>
-                                <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">Facebook</h2>
-                                <h2 class="text-lg sm:text-2xl font-medium text-white mt-3">X</h2>
-                            </div>
-                            <div class="mt-14">
-                                <h2 class="text-sm sm:text-base font-normal text-gray-100">Office —</h2>
-                                <h2 class="mt-3 xs:text-lg sm:text-2xl font-medium text-white">Saudi Arabia</h2>
-                                <h2 class="mt-3 xs:text-xs sm:text-sm w-56">R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa</h2>
-                            </div>
-                        </div>
-                        <div>
-                            <nav class="font-secondary text-right">
-                                <img id="close-nav" onclick="closeNav()" src="assets/imgs/Close.svg" class="cursor-pointer ml-auto w-5 h-5">
-                                <ul id="nav">
-                                    <li class="mt-12">
-                                        <a class="font-bold text-lg  sm:text-4xl w-[50px]" href="index.html">Home</a>
-                                    </li>
-                                    <li class="mt-12">
-                                        <a class="font-bold text-lg  sm:text-4xl w-[50px]" href="about.html">About</a>
-                                    </li>
-                                    <li class="mt-12">
-                                        <a class="font-bold text-lg  sm:text-4xl w-[50px]" href="Services.html">Services</a>
-                                    </li>
-                                    <li class="mt-12">
-                                        <a class="font-bold text-lg  sm:text-4xl w-[50px]" href="Works.html">Works</a>
-                                    </li>
-                                    <li class="mt-12">
-                                        <a class="font-bold text-lg  sm:text-4xl" href="contact us.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+              <a href="contact us.html"
+                ><img
+                  class="p-4 bg-septenary rounded-full w-20 h-20"
+                  src="assets/imgs/right-arrow.svg"
+                  alt=""
+              /></a>
             </div>
+          </div>
+
+          <marquee direction="right">
+            <img class="container" src="assets/imgs/frame.png" alt="" />
+          </marquee>
         </div>
+      </div>
 
-        <div class="container mt-20">
-            <div class="max-w-[1136px] mb-14">
-                <h2 class="text-primary font-normal xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-normal mb-3">
-                    Our Story
-                </h2>
-                <p class="text-gray-700 font-normal xs:text-base sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-normal">
-                    Dedicated to Transforming Tourism Through Innovation and Sustainability
-                </p>
-            </div>
-            <div class="relative m-auto flex md:justify-start sm:justify-center">
-                <div class="">
-                    <img class="w-full xs:hidden md:block" src="assets/imgs/about-ph-1.png" alt="">
-                    <img class="xs:block md:hidden " src="assets/imgs/about-ph-2.png" alt="">
-                </div>
-                <div class="absolute xs:m-2 md:m-6 p-6 xl:pb-36 rounded-2xl w-auto bg-white xs:w-[310px] md:w-auto xl:w-[670px]">
-                    <p class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-sm xl:text-xl">Overview</p>
-                    <h2 class="mb-1 xl:mb-4 text-gray-700 font-medium xs:text-2xl md:text-4xl xl:text-6xl">About Nasla</h2>
-                    <p class="2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest">
-                        Born from the historic heart of Al-Ahsa, NASLA was founded with the ambition to become a leader in Saudi Arabia's tourism development and experiential travel. Acquired by Salem Balhamer Holding Group and headquartered in Dammam, NASLA aligns perfectly with the group’s vision of diversifying investments and supporting Saudi Arabia’s Vision 2030. 
-                    </p>
-                    <p class="xl:mt-10 2md:text-justify text-gray-500 font-normal xs:text-xs md:text-base xl:text-base 2md:tracking-widest">
-                        Innovation, sustainability, and cultural authenticity are at the core of NASLA. We don’t just create destinations – we craft experiences.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="container mt-20 mb-20 pt-10 pb-10 xs:hidden xl:flex justify-between items-center border-b border-t border-gray-300">
-            <div class="max-w-[760px] relative">
-                <div id="content-1" class="">
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Message</h2>
-                    <p class="font-normal text-xl text-gray-500">Our mission is to transform the way people perceive and engage with travel and tourism. By leveraging cutting-edge technology, sustainable practices, and a deep understanding of local cultures, we aspire to craft immersive and unforgettable experiences that resonate with visitors on a profound level.</p>
-                </div>
-                <div id="content-2" class="hidden">
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Vision</h2>
-                    <p class="font-normal text-xl text-gray-500">To be a leading force in shaping the future of tourism in Saudi Arabia and beyond, while we envision our projects seamlessly integrating with its natural and cultural surroundings.</p>
-                </div>
-                <div id="content-3" class="hidden">
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Values</h2>
-                    <p class="font-normal text-xl text-gray-500 mb-6">Core values are the set of ideals, principles, and beliefs that form the broad outlines that direct and control our behavior, guide decisions, and provide a reference for resolution and weighting when there is disagreement about a specific decision. Values stem from our Islamic and Arab beliefs and culture, our national identity, and the cumulative legacy practiced as behavior since its founding by the founder of the group and the Chairman of its Board of Directors, Sheikh Salem Balhamer, may God bless him and the team that started with him. We strive and work hard to ensure its sustainability across generations. Our core value system in the Salem Balhamer Group has come to include:</p>
-                    <div class="max-w-[680px] flex flex-wrap">
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Commitment</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Transparency</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Credibility</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Sustainability</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Innovation</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Respect</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Professionalism</a>
-                    </div>
-                </div>
-            </div>
-            <div class="w-96 border-l-2 border-gray-300">
-                <h4 id="btn-1" class="font-semibold text-5xl p-8 pr-[370px] cursor-pointer bg-primary text-white" onclick="showFirst('content-1')">Message</h4>
-                <h4 id="btn-2" class="font-semibold text-5xl text-tertiary p-8 pr-[370px] cursor-pointer" onclick="showSecond('content-2')">Vision</h4>
-                <h4 id="btn-3" class="font-semibold text-5xl text-tertiary p-8 pr-[370px] cursor-pointer" onclick="showThird('content-3')">Values</h4>
-            </div>
-        </div>
-
-        <div class="container mt-20 mb-20 pt-10 pb-10 xs:flex xl:hidden justify-between items-center border-b border-t border-gray-300">
-            <div class="max-w-[760px] relative">
-                <div>
-                    <h4 class="font-semibold text-5xl text-tertiary mb-3">Message</h4>
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Message</h2>
-                    <p class="font-normal text-xl text-gray-500">Our mission is to transform the way people perceive and engage with travel and tourism. By leveraging cutting-edge technology, sustainable practices, and a deep understanding of local cultures, we aspire to craft immersive and unforgettable experiences that resonate with visitors on a profound level.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">Vision</h4>
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Vision</h2>
-                    <p class="font-normal text-xl text-gray-500">To be a leading force in shaping the future of tourism in Saudi Arabia and beyond, while we envision our projects seamlessly integrating with its natural and cultural surroundings.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-5xl text-tertiary mb-3 mt-10">Values</h4>
-                    <h2 class="font-semibold text-3xl text-octonary mb-8">Our Values</h2>
-                    <p class="font-normal text-xl text-gray-500 mb-6">Core values are the set of ideals, principles, and beliefs that form the broad outlines that direct and control our behavior, guide decisions, and provide a reference for resolution and weighting when there is disagreement about a specific decision. Values stem from our Islamic and Arab beliefs and culture, our national identity, and the cumulative legacy practiced as behavior since its founding by the founder of the group and the Chairman of its Board of Directors, Sheikh Salem Balhamer, may God bless him and the team that started with him. We strive and work hard to ensure its sustainability across generations. Our core value system in the Salem Balhamer Group has come to include:</p>
-                    <div class="max-w-[680px] flex flex-wrap">
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Commitment</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Transparency</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Credibility</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Sustainability</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Innovation</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Respect</a>
-                        <a class="p-3 mr-3 mb-3 bg-gray-100 text-nonary rounded-xl gap-3 font-medium text-center w-auto" href="#">Professionalism</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-20">
-            <div class="text-center">
-                <h1 class="font-normal text-sm text-decenary mb-6">CEO MESSAGE</h1>
-
-                <h1 class="font-normal xs:text-3xl sm:text-5xl 2md:text-6xl text-gray-700 mb-28 max-w-[800px] m-auto">Guiding Our Journey: A Message from the CEO</h1>
-            </div>
-
-            <div class="flex justify-around items-center">
-                <div class="xs:hidden xl:block mr-5">
-                    <img class="rounded-3xl border-[10px] border-solid border-primary" src="assets/imgs/ali-22.png" alt="CEO">
-                </div>
-                <div class="w-[700px] bg-senary rounded-3xl p-8">
-                    <h1 class="mb-7 font-normal text-sm text-gray-400">
-                        Our CEO Message
-                    </h1>
-                    <p class="mb-2 text-lg font-normal text-gray-500">“Driven by Vision 2030, NASLA aspires to contribute to transform Saudi Arabia into a world-class tourist destination. While The Kingdom's ambitious plan aims to attract 150 million visitors by 2030, a significant increase from the current 100 million.”</p>
-                    <p class="mb-2 text-lg font-normal text-gray-500">We at NASLA are committed to developing tourism experiences that celebrate the rich cultural heritage and traditions of Saudi Arabia, while remaining sensitive to the diverse backgrounds of our guests. By fostering a deep understanding of both Arabic and international cultures, we strive to create a welcoming and enriching environment for all.</p>
-                    <p class="mb-2 text-lg font-normal text-gray-500">Through continuous improvement in our people, processes, and technology, NASLA is dedicated to achieving excellence in the tourism sector. We actively seek partnerships with local and international organizations to share best practices and achieve our shared goals.</p>
-                    <h2 class="mt-10 font-npormal text-lg text-gray-700">Ali Alsaileek</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mb-3">
-            <div class="bg-primary rounded-3xl pt-10 pb-10 text-white">
-                <div class="container flex justify-between mb-36">
-                    <div>
-                        <p class=" xs:text-xl sm:text-2xl">Ready to get started?</p>
-                        <h2 class="xs:text-5xl sm:text-7xl font-medium">Let’s Talk</h2>
-                    </div>
-                    <div>
-                        <a href="contact us.html"><img class="p-4 bg-septenary rounded-full w-20 h-20" src="assets/imgs/right-arrow.svg" alt=""></a>
-                    </div>
-                </div>
-    
-                <marquee direction="right">
-                    <img class="container" src="assets/imgs/frame.png" alt="">
-                </marquee>
-            </div>
-        </div>
-
-        <div class="pt-20 pb-20 container">
-            <div class="flex xs:flex-col lg:flex-row justify-between mb-10">
-                <div class="mb-10">
-                    <img src="assets/imgs/Logo.svg" alt="">
-                </div>
-                <div class="mb-10">
-                    <h2 class="text-xl text-gray-700 font-semibold mb-4">Contact Us</h2>
-                    <p class="text-sm mb-3 text-gray-400 ">+966 - 258745</p>
-                    <p class="text-sm mb-3 text-gray-400 ">Info@Nasla.com</p>
-                    <p class="text-sm mb-3 text-gray-400 w-[370px]">R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa</p>
-                </div>
-                <div class="mb-10">
-                    <div>
-                        <h2 class="font-semibold text-xl text-gray-700 mb-5">Follow us on Social Media</h2>
-                    </div>
-                    <div class="flex flex-row">
-                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/X.svg" alt="">
-                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/instgram.svg" alt="">
-                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/web.svg" alt="">
-                        <img class="bg-septenary p-2 rounded-full m-1" src="assets/imgs/mail.svg" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="pt-20 pb-20 container">
+        <div class="flex xs:flex-col lg:flex-row justify-between mb-10">
+          <div class="mb-10">
+            <img src="assets/imgs/Logo.svg" alt="" />
+          </div>
+          <div class="mb-10">
+            <h2 class="text-xl text-gray-700 font-semibold mb-4">Contact Us</h2>
+            <p class="text-sm mb-3 text-gray-400">+966 - 258745</p>
+            <p class="text-sm mb-3 text-gray-400">Info@Nasla.com</p>
+            <p class="text-sm mb-3 text-gray-400 w-[370px]">
+              R. Vigías 2, Piso 0/C, Parque das Nações, 1990-506 Lisboa
+            </p>
+          </div>
+          <div class="mb-10">
             <div>
-                <h2 class="text-center text-xs text-gray-400 font-medium mt-10">© Copyright 2020-2024. All Rights Reserved. Kadi Beauty, an app from Kadi Salon.</h2>
+              <h2 class="font-semibold text-xl text-gray-700 mb-5">
+                Follow us on Social Media
+              </h2>
             </div>
+            <div class="flex flex-row">
+              <img
+                class="bg-septenary p-2 rounded-full m-1"
+                src="assets/imgs/X.svg"
+                alt=""
+              />
+              <img
+                class="bg-septenary p-2 rounded-full m-1"
+                src="assets/imgs/instgram.svg"
+                alt=""
+              />
+              <img
+                class="bg-septenary p-2 rounded-full m-1"
+                src="assets/imgs/web.svg"
+                alt=""
+              />
+              <img
+                class="bg-septenary p-2 rounded-full m-1"
+                src="assets/imgs/mail.svg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-
-
-
+        <div>
+          <h2 class="text-center text-xs text-gray-400 font-medium mt-10">
+            © Copyright 2020-2024. All Rights Reserved. Kadi Beauty, an app from
+            Kadi Salon.
+          </h2>
+        </div>
+      </div>
     </div>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
